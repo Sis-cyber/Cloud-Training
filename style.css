@@ -106,6 +106,7 @@ nav {
     position: relative;
     color: rgba(94, 82, 82, 0.589);
     transition: all .3s;
+    text-decoration: none;
 }
 
 .nav_bg ul li a:hover {
