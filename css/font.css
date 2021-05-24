@@ -1,0 +1,14 @@
+@font-face {
+  font-family: abel;
+  src: url('../fonts/Abel/Abel-Regular.ttf');
+}
+
+@font-face {
+  font-family: oswald;
+  src: url('../fonts/Oswald/Oswald-VariableFont_wght.ttf');
+}
+
+@font-face {
+  font-family: open_sans;
+  src: url('../fonts/Open_Sans/OpenSans-Regular.ttf');
+}
