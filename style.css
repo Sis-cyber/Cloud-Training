@@ -110,6 +110,7 @@ nav {
 
 .nav_bg ul li a:hover {
     color: #000;
+    text-decoration: none !important;
 }
 
 .nav_bg ul li a::after {
