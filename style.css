@@ -249,7 +249,7 @@ nav {
 
 .banner-section::after {
     content: '';
-    background: linear-gradient(rgba(0, 66, 300, 0.6), rgba(0, 6, 300, 0.6)), url('../img/amy-hirschi-szrJ3wjzOMg-unsplash_50.jpg') no-repeat;
+    background: linear-gradient(rgba(0, 66, 300, 0.6), rgba(0, 6, 300, 0.6)), url('./img/amy-hirschi-szrJ3wjzOMg-unsplash_50.jpg') no-repeat;
     background-position: center;
     background-size: cover;
     width: 50%;
