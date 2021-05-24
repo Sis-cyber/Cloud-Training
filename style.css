@@ -79,7 +79,7 @@ nav {
 
 .nav_bg {
     width: 80%;
-    padding: .8rem 4rem;
+    padding: .8rem 4rem .6rem 4rem;
     margin: auto;
 
 }
@@ -93,7 +93,7 @@ nav {
 .nav_bg ul {
     float: right;
     display: flex;
-    padding: .5rem 0;
+    padding: .5rem 0 0 0;
 }
 
 .nav_bg ul li {
