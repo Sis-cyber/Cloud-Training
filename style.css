@@ -73,19 +73,154 @@ h1 {
 
 /* *******global style end******* */
 /* ******header section start **** */
-.container .navbar-brand {
-  font-family: 'Abel', sans-serif;
-  font-size: 1.7rem;
+nav {
+    background: #ffff;
+}
+
+.nav_bg {
+    width: 80%;
+    padding: .8rem 4rem;
+    margin: auto;
 
 }
 
-.nav-item {
-  font-family: var(--abel);
-  font-size: 18px;
+.logo a {
+    font-size: 2rem;
+    font-family: var(--abel);
+    text-decoration: none;
 }
 
-.nav-item:hover {
-  background: lightblue;
+.nav_bg ul {
+    float: right;
+    display: flex;
+    padding: .5rem 0;
+}
+
+.nav_bg ul li {
+    margin: 0 .5rem;
+}
+
+.nav_bg ul li a {
+    font-size: 1.4rem;
+    font-family: var(--abel);
+    position: relative;
+    color: rgba(94, 82, 82, 0.589);
+    transition: all .3s;
+}
+
+.nav_bg ul li a:hover {
+    color: #000;
+}
+
+.nav_bg ul li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: .1rem;
+    background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+    transition: all .3s ease;
+
+}
+
+.nav_bg ul li a.active:after,
+.nav_bg ul li a:hover:after {
+    width: 100%;
+}
+
+
+.check_btn {
+    font-size: 2rem;
+    float: right;
+    color: rgb(194, 91, 91);
+    margin-right: 40px;
+    cursor: pointer;
+    align-items: center;
+    display: none;
+    text-align: center;
+
+}
+
+#check {
+    display: none;
+}
+
+@media (max-width: 952px) {
+    .logo a {
+        font-size: 1.8rem;
+        padding-left: 2rem;
+    }
+
+    .nav_bg ul li a {
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (max-width: 858px) {
+    .check_btn {
+        display: block;
+    }
+
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        left: -100%;
+        flex-direction: column;
+        align-items: center;
+        transition: all .5s;
+        background: linear-gradient(rgba(0, 66, 300, 1), rgba(0, 6, 300, 1));
+        z-index: 1;
+        color: #000;
+
+    }
+
+    ul li,
+    ul li a {
+        font-size: 2rem !important;
+        margin: 1rem 0;
+        color: #eee !important;
+        font-weight: bold;
+
+    }
+
+    #check:checked~ul {
+        left: 0;
+    }
+
+}
+
+@media (max-width: 672px) {
+    .nav_bg {
+        width: 100%;
+    }
+
+    .logo a {
+        font-size: 1.5rem;
+        padding: 0
+    }
+
+    .check_btn {
+        font-size: 1.2rem;
+        padding-top: .4rem;
+    }
+}
+
+@media (max-width: 460px) {
+    .nav_bg {
+        width: 100%;
+    }
+
+    .logo a {
+        font-size: 1.5rem;
+        font-size: 1.3rem;
+    }
+
+    .check_btn {
+        font-size: 1.1rem;
+        padding-top: .4rem;
+    }
 }
 
 /* ******header section end **** */
